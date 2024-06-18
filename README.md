@@ -921,6 +921,7 @@ sudo swaks -t daniela@beyond.com -t marcus@beyond.com --from john@beyond.com --a
 
 ```powershell
 ldapsearch -x -H ldap://<IP>:<port> # try on both ldap and ldaps, this is first command to run if you dont have any valid credentials.
+ldapsearch -x -H ‘ldap://192.168.142.122’ -D ‘hutch\fmcsorley’ -w ‘CrabSharkJellyfish192’ -b ‘dc=hutch,dc=offsec’ #This is the first commmand to run when you get valid credentials.
 
 ldapsearch -x -H ldap://<IP> -D '' -w '' -b "DC=<1_SUBDOMAIN>,DC=<TLD>"
 ldapsearch -x -H ldap://<IP> -D '<DOMAIN>\<username>' -w '<password>' -b "DC=<1_SUBDOMAIN>,DC=<TLD>"
