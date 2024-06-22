@@ -404,7 +404,7 @@ git show <commit-id>
 - If you identify `.git` active on the website. Use https://github.com/arthaud/git-dumper now it downloads all the files and saves it locally. Perform the same above commands and escalate.
 - Some useful GitHub dorks: [https://book.hacktricks.xyz/generic-methodologies-and-resources/external-recon-methodology/github-leaked-secrets](https://book.hacktricks.xyz/generic-methodologies-and-resources/external-recon-methodology/github-leaked-secrets) → this might not be relevant to the exam environment.
 
-- Running wget -r *https://example.com/.git/* and then you can do *git restore .* OR *git log* and then call the commit id using *git show <commitid>*
+- Running wget -r *https://example.com/.git/* and then you can do *git restore .* OR *git log* and then call the commit id using *git show commitid*
 
 ## Connecting to RDP
 
