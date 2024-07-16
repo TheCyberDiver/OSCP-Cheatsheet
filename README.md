@@ -432,6 +432,19 @@ ssh username@target_ip #enter password if you gave any
 ```
 
 ## File Transfers
+SMB no tools required
+```Setup SMB on 192 so that 10 can access it
+
+mkdir C:\SharedFolder
+net share SharedFolder=C:\SharedFolder /grant:Everyone,full
+net use Z: \\192.168.x.x\SharedFolder or net use Z: \\192.168.x.x\SharedFolder /user:username password
+
+YOU NEED TO USE MS01 or MS02 instead of IP for some reason
+FIREWALL IF THAT DOESN’T WORK 
+netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
+
+
+```
 
 - Windows when you have GUI access on windows and need to get a file from windows to kali
 ```
